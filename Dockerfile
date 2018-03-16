@@ -7,4 +7,6 @@ EXPOSE 4200
 
 WORKDIR /app
 
-ENTRYPOINT ["ng"]
+ADD ./run.sh /run.sh
+
+ENTRYPOINT ["/run.sh"]
