@@ -1,3 +1,4 @@
 #!/bin/sh
 
-sh -c "ng $@"
+COMMAND="ng $@"
+sh -c "$COMMAND"
